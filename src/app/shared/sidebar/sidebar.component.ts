@@ -11,4 +11,8 @@ export class SidebarComponent {
   get historial() {
     return this.giffyService.historial;
   }
+
+  search(item: string) {
+    this.giffyService.buscarGiffy(item);
+  }
 }

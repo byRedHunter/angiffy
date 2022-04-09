@@ -10,8 +10,9 @@
     <ng-template #results>
       <a
         href="#"
-        class="list-group-item list-group-item-action bg-success text-white"
+        class="list-group-item list-group-item-action bg-success text-white animate__animated animate__fadeIn"
         *ngFor="let item of historial"
+        (click)="search(item)"
       >
         {{ item | titlecase }}
       </a>
